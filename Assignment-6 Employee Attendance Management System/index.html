@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Employee Attendance Management System</h1>
+        <input type="text" id="employeeName" placeholder="Enter Employee Name">
+
+        <select id="attendanceStatus">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Late">Late</option>
+        </select>
+
+        <button onclick="addEmployee()">Add Employee</button>
+        <h2>Attendance Report:</h2>
+        <ul id="reportList"></ul>
+        <div class="summary">
+            <p id="totalEmployees">Total Employees: 0</p>
+            <p id="presentCount">Present: 0</p>
+            <p id="absentCount">Absent: 0</p>
+            <p id="lateCount">Late: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
